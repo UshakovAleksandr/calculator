@@ -21,7 +21,7 @@ func main() {
 	var mathSign string
 
 	for {
-		number, err := funcs.ConvertToInt(funcs.InputNumber(*reader))
+		number, err := funcs.ConvertToFloat(funcs.InputNumber(*reader))
 		if err != nil {
 			fmt.Println("Введено неверное значение, повторите ввод")
 			continue
@@ -40,7 +40,7 @@ func main() {
 	}
 
 	for {
-		number, err := funcs.ConvertToInt(funcs.InputNumber(*reader))
+		number, err := funcs.ConvertToFloat(funcs.InputNumber(*reader))
 		if err != nil {
 			fmt.Println("Введено неверное значение, повторите ввод")
 			continue

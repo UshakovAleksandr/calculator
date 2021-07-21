@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-func ConvertToInt(num string) (float64, error) {
+func ConvertToFloat(num string) (float64, error) {
 	number, err := strconv.ParseFloat(num, 64)
 	if err != nil {
 		fmt.Printf("Введенный символ '%v' не является числом. Ошибка: '%v'\n", num, err)
